@@ -44,3 +44,15 @@ tasks:
     inputs:
       - '@group(ecmaInputs)'
       - '@group(configs)'
+
+  lint.circular:
+    command:
+      - 'depcruise'
+      - '.'
+      - '--exclude'
+      - 'dist'
+      - '--progress'
+      - '--config'
+      - '@in(0)'
+    inputs:
+      - '/.dependency-cruiser.js'

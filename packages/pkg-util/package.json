@@ -7,7 +7,22 @@
     ]
   },
   "exports": {
-    "./util": "./src/util.ts"
+    "./util": "./src/util.ts",
+    "./works": {
+      "import": [
+        "./src/util.ts"
+      ],
+      "types": "./src/*.d.ts",
+      "default": [
+        "./src/util.ts"
+      ]
+    },
+    "./notworks": {
+      "types": "./src/*.d.ts",
+      "default": [
+        "./src/util.ts"
+      ]
+    }
   },
   "devDependencies": {
     "@test/tsconfig": "workspace:^"
