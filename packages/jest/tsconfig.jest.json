@@ -1,0 +1,7 @@
+{
+  "extends": "@test/tsconfig/tsconfig.cjs.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true
+  }
+}

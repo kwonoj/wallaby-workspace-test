@@ -1,0 +1,15 @@
+{
+  "name": "@test/util",
+  "imports": {
+    "#util/*": [
+      "./src/*",
+      "./src/*.ts"
+    ]
+  },
+  "exports": {
+    "./util": "./src/util.ts"
+  },
+  "devDependencies": {
+    "@test/tsconfig": "workspace:^"
+  }
+}

@@ -1,0 +1,11 @@
+# https://moonrepo.dev/docs/config/toolchain#node
+node:
+  version: '20.15.1'
+  dependencyVersionFormat: 'workspace-caret'
+  dedupeOnLockfileChange: false
+  packageManager: 'yarn'
+  yarn:
+    version: '4.5.0'
+  rootPackageOnly: false
+  syncPackageManagerField: false
+  addEnginesConstraint: false

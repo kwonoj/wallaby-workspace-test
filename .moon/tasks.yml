@@ -1,0 +1,47 @@
+fileGroups:
+  configs:
+    - '*.config.{js,cjs,mjs,ts}'
+    - '*.json'
+    - '/yarn.lock'
+    - '/package.json'
+    - 'package.json'
+  sources:
+    - 'src/**/*'
+    - '!**/dist/**/*'
+  tests:
+    - 'tests/**/*'
+    - 'src/**/*.unit.{js,jsx,ts,tsx}'
+    - '**/__tests__/**/*'
+  assets:
+    - 'assets/**/*'
+    - 'images/**/*'
+    - 'static/**/*'
+    - '**/*.{scss,css}'
+  ecmaInputs:
+    - './**/*.{js,jsx,ts,tsx}'
+    - '*.json'
+    - '!**/dist/**/*'
+    - '!**/coverage/lcov-report/**/*'
+  ecmaOutputs:
+    - '**/dist/**/*'
+
+tasks:
+  build.compile:
+    command: 'tsc --build --pretty'
+    inputs:
+      - '@group(ecmaInputs)'
+      - '@group(tsConfigs)'
+    outputs:
+      - '@group(ecmaOutputs)'
+      - '@group(tsbuildOutputs)'
+
+  test.jest:
+    description: 'Run jest tests'
+    command:
+      - 'jest'
+      # Dont fail if a project has no tests
+      - '--passWithNoTests'
+    inputs:
+      - '@group(ecmaInputs)'
+      - '@group(configs)'
+      - '@group(jestConfigs)'

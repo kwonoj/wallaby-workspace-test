@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    // https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping#node-20
+    "lib": ["ES2023"],
+    "target": "ES2022"
+  }
+}

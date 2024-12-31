@@ -1,0 +1,8 @@
+language: 'unknown'
+type: 'configuration'
+
+workspace:
+  inheritedTasks:
+    # Do not inherit all of the global tasks.
+    # tsconfig is a config-only package.
+    include: []

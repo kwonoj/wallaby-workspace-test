@@ -1,0 +1,17 @@
+{
+  "name": "@test/core",
+  "imports": {
+    "#core/*": [
+      "./src/*",
+      "./src/*.ts"
+    ]
+  },
+  "exports": {
+    "./core": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@test/jest": "workspace:^",
+    "@test/tsconfig": "workspace:^",
+    "@test/util": "workspace:^"
+  }
+}
