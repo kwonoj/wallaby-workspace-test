@@ -13,7 +13,17 @@
   "author": "",
   "description": "",
   "devDependencies": {
-    "@moonrepo/cli": "^1.30.6"
+    "@jest/reporters": "^29.7.0",
+    "@moonrepo/cli": "^1.30.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-console-group-reporter": "^1.1.1",
+    "jest-environment-node": "^29.7.0",
+    "jest-message-util": "^29.7.0",
+    "jest-standard-reporter": "^2.0.0",
+    "react": "^18.3.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^8.6.2"
   },
   "packageManager": "yarn@4.5.0+sha512.837566d24eec14ec0f5f1411adb544e892b3454255e61fdef8fd05f3429480102806bac7446bc9daff3896b01ae4b62d00096c7e989f1596f2af10b927532f39"
 }

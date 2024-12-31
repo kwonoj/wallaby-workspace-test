@@ -1,2 +1,6 @@
 language: 'javascript'
 type: 'configuration'
+
+workspace:
+  inheritedTasks:
+    include: []

@@ -30,13 +30,13 @@ tasks:
     command: 'tsc --build --pretty'
     inputs:
       - '@group(ecmaInputs)'
-      - '@group(tsConfigs)'
     outputs:
       - '@group(ecmaOutputs)'
-      - '@group(tsbuildOutputs)'
 
   test.jest:
     description: 'Run jest tests'
+    env:
+      TS_NODE_TRANSPILE_ONLY: 'true'
     command:
       - 'jest'
       # Dont fail if a project has no tests
@@ -44,4 +44,3 @@ tasks:
     inputs:
       - '@group(ecmaInputs)'
       - '@group(configs)'
-      - '@group(jestConfigs)'
