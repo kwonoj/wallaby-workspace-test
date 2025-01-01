@@ -9,9 +9,13 @@
   "exports": {
     "./core": "./src/index.ts"
   },
+  "scripts": {
+    "test-jest": "jest"
+  },
   "devDependencies": {
     "@test/jest": "workspace:^",
     "@test/tsconfig": "workspace:^",
-    "@test/util": "workspace:^"
+    "@test/util": "workspace:^",
+    "jest": "^29.7.0"
   }
 }

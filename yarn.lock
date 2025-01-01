@@ -869,6 +869,7 @@ __metadata:
     "@test/jest": "workspace:^"
     "@test/tsconfig": "workspace:^"
     "@test/util": "workspace:^"
+    jest: "npm:^29.7.0"
   languageName: unknown
   linkType: soft
 

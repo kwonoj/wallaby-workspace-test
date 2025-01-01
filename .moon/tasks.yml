@@ -35,8 +35,6 @@ tasks:
 
   test.jest:
     description: 'Run jest tests'
-    env:
-      TS_NODE_TRANSPILE_ONLY: 'true'
     command:
       - 'jest'
       # Dont fail if a project has no tests
